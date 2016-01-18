@@ -24,12 +24,13 @@ public class MainActivity extends ActionBarActivity implements LoaderManager.Loa
 
 
     private String[] projection= {
-            Telephony.TextBasedSmsColumns.PERSON,
+            "_id",
+            Telephony.TextBasedSmsColumns.ADDRESS,
             Telephony.TextBasedSmsColumns.BODY
     };
 
-    public static final int COL_PERSON = 0;
-    public static final int COL_BODY = 1;
+    public static final int COL_PERSON = 1;
+    public static final int COL_BODY = 2;
 
     private MessageAdapter messageAdapter;
 

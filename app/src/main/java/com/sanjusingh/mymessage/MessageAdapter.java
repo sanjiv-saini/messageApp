@@ -27,7 +27,7 @@ public class MessageAdapter extends CursorAdapter {
 
         TextView message = (TextView) view.findViewById(R.id.message);
 
-        String person = String.valueOf(cursor.getLong(MainActivity.COL_PERSON));
+        String person = cursor.getString(MainActivity.COL_PERSON);
         String messageText = cursor.getString(MainActivity.COL_BODY);
 
         message.setText(person + ":\n" + messageText);
